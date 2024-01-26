@@ -2,21 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>talenttree</title>
-    <link rel="stylesheet" href="style.css">
+    <title>skill tree</title>
 </head>
 <body>
-<nav>
-    <ul class="nav_links">
-        <div class="logo">
-            <img src="tcr.png" alt="tcr logo">
-        </div>
-        <li><a href="index.html">home</a></li>
-        <li><a href="quiz.html">quiz</a></li>
-        <li><a href="talent tree.html">talenttree</a></li>
-        <li><a href="chatbot.html">chat bot</a></li>
-    </ul>
-    <a href="aanmeldpage.html" class="nav-button"> Registratie </a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Tree</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #006445;
+            color: white;
+        }
+
+        #title {
+            font-size: 24px;
+            margin-bottom: 20px; /* Adjust this value to set the vertical distance between title and buttons */
+        }
+
+        button {
+            position: relative;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #dbff4a;
+            color: white;
+            border: none;
+            margin: 10px; /* Adjust this value to set the vertical distance between buttons */
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: -20px; /* Adjust this value to set the vertical distance between the line and the button */
+            left: 50%;
+            width: 2px;
+            height: 20px; /* Adjust this value to set the length of the line */
+            background-color: black;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        #secondButton::before,
+        #thirdButton::before,
+        #fourthButton::before,
+        #fifthButton::before,
+        #sixthButton::before,
+        #seventhButton::before,
+        #eighthButton::before {
+            top: -30px; /* Adjust this value to set the vertical distance between the lines and the buttons */
+        }
+    </style>
+</head>
+<body>
+
+<div id="title">Talent Tree</div>
+
+<button id="startButton" onclick="changeText('startButton')">Hoe declareer je variabelen</button>
+<button id="secondButton" onclick="changeText('secondButton')">Wat zijn variabelen</button>
+<button id="thirdButton" onclick="changeText('thirdButton')">Hoe maak je een loop</button>
+<button id="fourthButton" onclick="changeText('fourthButton')">Hoe defineer je een functie</button>
+<button id="fifthButton" onclick="changeText('fifthButton')">Hoe lang volg je deze opleiding</button>
+<button id="sixthButton" onclick="changeText('sixthButton')">Wat leer je bij deze opleiding</button>
+<button id="seventhButton" onclick="changeText('seventhButton')">Welke vakken horen bij coderen</button>
+<button id="eighthButton" onclick="changeText('eighthButton')">Aantal periodes per leerjaar</button>
+
+<script>
+    function changeText(buttonId) {
+        const button = document.getElementById(buttonId);
+
+        switch (buttonId) {
+            case 'startButton':
+                if (button.innerText.includes('variabelen')) {
+                    button.innerText = 'Je gebruikt de code "let x = 5;" als een voorbeeld';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Hoe declareer je variabelen';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+
+            case 'secondButton':
+                if (button.innerText.includes('variabelen')) {
+                    button.innerText = 'Variabelen worden gebruikt om waardes, bijvoorbeeld getallen, in je programma te gebruiken en te onthouden';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Wat zijn variabelen';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+
+            case 'thirdButton':
+                if (button.innerText.includes('loop')) {
+                    button.innerText = 'Je gebruikt bijvoorbeeld deze code: (let i = 0; i < 5; i++) { }';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Hoe maak je een loop';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+
+            case 'fourthButton':
+                if (button.innerText.includes('functie')) {
+                    button.innerText = 'function myFunction() { }';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Hoe defineer je een functie';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+
+            case 'fifthButton':
+                if (button.innerText.includes('opleiding')) {
+                    button.innerText = 'Je kan deze opleiding voor 4 jaar volgen maar er is ook kans op versnelling. (3 jaar)';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Hoe lang volg je deze opleiding';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+
+            case 'sixthButton':
+                if (button.innerText.includes('opleiding')) {
+                    button.innerText = 'Na de loop van jaren leer je zelf hoe je een software developer kan worden';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Wat leer je bij deze opleiding';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+
+            case 'seventhButton':
+                if (button.innerText.includes('coderen')) {
+                    button.innerText = 'Bij deze opleiding horen de vakken project, javascript, php, project management, en ontwerpen';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Welke vakken horen bij coderen';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+
+            case 'eighthButton':
+                if (button.innerText.includes('leerjaar')) {
+                    button.innerText = 'Er zijn 4 periodes in een leerjaar met elke periode een ander project';
+                    button.classList.add('onClickButton');
+                } else {
+                    button.innerText = 'Aantal periodes per leerjaar';
+                    button.classList.remove('onClickButton');
+                }
+                break;
+        }
+    }
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
