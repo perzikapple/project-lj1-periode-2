@@ -70,15 +70,7 @@ function sendMessage() {
     }
 }
 
-const mobilenavtoggle=
-    document.getElementById('mobileNavtoggle')
-const mobileNav
-    document.getElementById('mobileNav')
 
-mobileNavToggle.addeventlistener('click',()=>
-{
-    mobilenav.classlist.toggle('show');
-})
 
 /* Regel 1 tot en met regel 77 gaat over de Home page Javascript */
 document.addEventListener("DOMContentLoaded", function() {

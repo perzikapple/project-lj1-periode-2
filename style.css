@@ -178,65 +178,10 @@ button {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #006445;
-}
 
-p {
-    color: white;
-    justify-content: flex-start;
-    text-align: left;
-    width: 50%;
-    font-size: 18px;
-    background-color: #004830;
-    padding: 20px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #004830;
-    margin: 0;
-}
-
-.logo img {
-    width: 200px;
-    height: auto;
-    background-color: #004830;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    background-color: #004830;
-    margin: 0;
-    align-items: center;
-}
-
-li {
-    margin-right: 20px;
-    background-color: #004830;
-}
-
-a {
-    text-decoration: none;
-    color: #dbff4a;
-    background-color: #004830;
-    font-size: 20px;
-
-
-}
 
 a:hover {
     color: #dbff4a;
-
-
-
-
 
 }
 .content-container {
@@ -251,21 +196,9 @@ a:hover {
     background-color: #004830;
 }
 
-.nav-button{
-    border: none;
-    background: #dbff4a;
-    padding: 12px 30px;
-    border-radius: 30px;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 30px;
-}
-
 button:hover{
     transform: scale(1.3);
 }
-
 
 .text-overlay {
     position: absolute;
