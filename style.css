@@ -173,21 +173,3 @@ button {
     padding: 8px 15px;
     cursor: pointer;
 }
-
-@media only screen and (max-width: 600px) {
-    nav {
-        display: block;
-    }
-
-    nav ul {
-        padding: 10px;
-    }
-
-    nav li {
-        display: block;
-        margin-bottom: 5px;
-    }
-    section {
-        display: none;
-    }
-}
