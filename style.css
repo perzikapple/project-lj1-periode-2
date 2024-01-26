@@ -173,3 +173,271 @@ button {
     padding: 8px 15px;
     cursor: pointer;
 }
+
+/* CSS code van regel 1 tot en met regel 230 is van de home page.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #006445;
+}
+
+p {
+    color: white;
+    justify-content: flex-start;
+    text-align: left;
+    width: 50%;
+    font-size: 18px;
+    background-color: #004830;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004830;
+    margin: 0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    background-color: #004830;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: #004830;
+    margin: 0;
+    align-items: center;
+}
+
+li {
+    margin-right: 20px;
+    background-color: #004830;
+}
+
+a {
+    text-decoration: none;
+    color: #dbff4a;
+    background-color: #004830;
+    font-size: 20px;
+
+
+}
+
+a:hover {
+    color: #dbff4a;
+
+
+
+
+
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.side-link{
+    color: white;
+    background-color: #004830;
+}
+
+.nav-button{
+    border: none;
+    background: #dbff4a;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 30px;
+}
+
+button:hover{
+    transform: scale(1.3);
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 17%;
+    left: 1%;
+    color: #dbff4a;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-overlay1 {
+    position: absolute;
+    top: 32%;
+    left: 1%;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    width: 45%;
+    font-weight: bold;
+}
+
+.text-overlay2 {
+    position: absolute;
+    top: 75%;
+    left: 1%;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    width: 45%;
+    font-weight: bold;
+}
+
+.text-overlay3 {
+    position: absolute;
+    top: 57%;
+    left: 1%;
+    color: #dbff4a;
+    padding: 10px;
+    font-size: 25px;
+    width: 30%;
+}
+
+.text-overlay4 {
+ position: absolute;
+    top: 85%;
+    left: 63%;
+    color: #dbff4a;
+    padding: 10px;
+    font-size: 25px;
+    width: 45%;
+    font-weight: bold;
+    /* dit is de tekst van de locatie van de school. hier in de code heb ik ervoor gezorgd dat
+     de tekst een kleur heeft en op de juiste plek staat met de juiste grootte.*/
+}
+
+
+.image1 {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 35%;
+    left: 63%;
+}
+
+.popup-container p {
+    color: #dbff4a;
+}
+
+/* Stijl voor de pop-up container */
+.popup-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #006445;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    color: #dbff4a;
+    text-align: center;
+
+}
+
+/* Stijl voor het p-element binnen de pop-up */
+.popup-container p {
+    margin: 0;
+    color: #dbff4a;
+}
+
+/* Stijl voor de sluitknop */
+.close {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #dbff4a;
+}
+
+/* Stijl voor de overlay achter de pop-up */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+}
+
+.countdown-container {
+    position: absolute;
+    top: 105px;
+    left: 77%;
+    text-align: center;
+    /* ik heb er hier voor gezorgd dat de countdown de juiste plek op het scherm krijgt en dus goed te zien is.*/
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    /* hierbij heb ik ervoor gezorgd hoe de countdown op beeld staat. staat ie in kolommen omloog of als een rij opzij.*/
+}
+
+#days, #hours, #minutes, #seconds {
+    border: 3px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    color: #dbff4a;
+    background-color: #006445;
+    /* hier heb ik de randen en kleur en tekst aangepast naar het gene wat wij mooi vinden en styling van TCR.*/
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    position: absolute;
+    top: 88%;
+    left: 60%;
+    /* dit is de code waardoor de linkjes op de juiste afstand van elkaar staat met de juiste margins. */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #006445;
+    background-color: #dbff4a;
+    padding: 5px 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* de code hierin gaat over de styling van de linkjes. denk aan de kleuren van de buttons en de border erom heen. */
+}
+
+.social-links a:hover {
+    background-color: #333;
+    color: #fff;
+    /* dit gaat over de button als je erover heen gaat met je muis. dan veranderd hij van kleur */
+}
+
+.social-link.active {
+    transform: scale(1.1);
+    /* dit is de grootte als je eroverheen gaat met de muis. hij word dus ietsjes groter. */
+}
