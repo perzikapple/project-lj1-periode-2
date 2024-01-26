@@ -1,0 +1,77 @@
+/* hieronder komt CSS code van de Quiz.*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    margin: 0;
+    color: #dbff4a;
+}
+
+#quiz-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #006445;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid black;
+    text-align: center;
+
+
+
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #dbff4a;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    position: absolute;
+    top: 88%;
+    left: 60%;
+    /* dit is de code waardoor de linkjes op de juiste afstand van elkaar staat met de juiste margins. */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #006445;
+    background-color: #dbff4a;
+    padding: 5px 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* de code hierin gaat over de styling van de linkjes. denk aan de kleuren van de buttons en de border erom heen. */
+}
+
+.social-links a:hover {
+    background-color: #333;
+    color: #fff;
+    /* dit gaat over de button als je erover heen gaat met je muis. dan veranderd hij van kleur */
+}
+
+.social-link.active {
+    transform: scale(1.1);
+    /* dit is de grootte als je eroverheen gaat met de muis. hij word dus ietsjes groter. */
+}

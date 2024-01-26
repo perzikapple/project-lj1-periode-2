@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>quiz</title>
+    <title> Project LJ1 P2</title>
+   
+    <link rel="stylesheet" href="quiz.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <nav>
@@ -12,11 +15,37 @@
             <img src="tcr.png" alt="tcr logo">
         </div>
         <li><a href="index.html">home</a></li>
-        <li><a href="quiz.html">quiz</a></li>
-        <li><a href="../talent%20tree.html">talenttree</a></li>
-        <li><a href="chatbot.html">chat bot</a></li>
+        <li><a href="quiz.html"> Quiz </a></li>
+        <li><a href="talent%20tree.html"> Talenttree</a></li>
+        <li><a href="chatbot.html"> Chatbot </a></li>
     </ul>
     <a href="aanmeldpage.html" class="nav-button"> Registratie </a>
 </nav>
 
-<script src="js.js"></script>
+<div id="quiz-container">
+    <h1>Quiz Time!</h1>
+    <div id="question-container"></div>
+    <div id="answer-buttons" class="btn-container"></div>
+    <button id="start-button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    <button id="next-button" class="btn hide" onclick="nextQuestion()">Next</button>
+    <button id="reset-button" class="btn hide" onclick="resetQuiz()">Reset Quiz</button>
+</div>
+
+<div class="social-links">
+    <a href="https://www.facebook.com/techniekcollegerotterdam" id="facebook-link">Facebook</a>
+    <a href="https://twitter.com/techniekcollege" id="twitter-link">Twitter</a>
+    <a href="https://www.instagram.com/techniekcollegerotterdam/" id="instagram-link">Instagram</a>
+    <a href="https://www.linkedin.com/company/techniek-college-rotterdam/" id="linkedin-link">LinkedIn</a>
+    <a href="https://www.youtube.com/user/techniekcollegerotterdam" id="youtube-link">YouTube</a>
+</div>
+
+
+<script src="javascript.js"></script>
+
+
+
+
+
+
+</body>
+</html>

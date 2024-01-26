@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title> Project LJ1 P2</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 
 </head>
 <body>
@@ -12,13 +13,23 @@
         <div class="logo">
             <img src="tcr.png" alt="tcr logo">
         </div>
-        <li><a href="Project%20LJ1%20P2.html">home</a></li>
+        <li><a href="index.html">home</a></li>
         <li><a href="quiz.html"> Quiz </a></li>
-        <li><a href="talenttree.html"> Talenttree</a></li>
+        <li><a href="talent%20tree.html"> Talenttree</a></li>
         <li><a href="chatbot.html"> Chatbot </a></li>
     </ul>
     <a href="aanmeldpage.html" class="nav-button"> Registratie </a>
 </nav>
+
+
+
+<div id="overlay" class="overlay"></div>
+
+<div id="popup" class="popup-container">
+    <span class="close" onclick="sluitPopup()">&times;</span>
+    <p id="welkomstTekst"></p>
+</div>
+
 
 <div class="text-overlay">
     Open dagen 26 en 27 Januari 2024.
@@ -33,11 +44,43 @@
 </div>
 
 <div class="text-overlay2">
-    Heeft u uw keuze al kunnen maken en u graag wilt aanmelden voor een opleiding hier op het Techniek college Rotterdam.
-    Dan kunt u rechtsboven op de Gele Registratie knop klikken en krijgt u daar meer informatie over het aanmelden en andere zaken over de opleidingen.
+Heeft u uw keuze al kunnen maken en u graag wilt aanmelden voor een opleiding hier op het Techniek college Rotterdam.
+Dan kunt u rechtsboven op de Gele Registratie knop klikken en krijgt u daar meer informatie over het aanmelden en andere zaken over de opleidingen.
 </div>
 
-<img src="../Schermafbeelding%202023-12-15%20125632.png" alt="image" class="image1">
+<div class="text-overlay3">
+    OPEN DAG:
+    <br>
+    26 JANUARI VAN 15.00 TOT 20.00
+    <br>
+    27 JANUARI VAN 10.00 TOT 14.00
+</div>
 
+<div class="text-overlay4">
+    LOCATIE: PRINS ALEXANDERLAAN 55
+</div>
+
+<div class="countdown-container">
+    <div class="countdown">
+        <div id="days"></div>
+        <div id="hours"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+    </div>
+</div>
+
+<div class="social-links">
+    <a href="https://www.facebook.com/techniekcollegerotterdam" id="facebook-link">Facebook</a>
+    <a href="https://twitter.com/techniekcollege" id="twitter-link">Twitter</a>
+    <a href="https://www.instagram.com/techniekcollegerotterdam/" id="instagram-link">Instagram</a>
+    <a href="https://www.linkedin.com/company/techniek-college-rotterdam/" id="linkedin-link">LinkedIn</a>
+    <a href="https://www.youtube.com/user/techniekcollegerotterdam" id="youtube-link">YouTube</a>
+</div>
+
+
+
+<img src="tcr%20foto.jpg" alt="image" class="image1">
+
+<script src="javascript.js"></script>
 </body>
 </html>
